@@ -1,0 +1,71 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 1em 0;
+    box-shadow: 0em 1em 2em black;
+}
+
+.Image{
+    margin-left: 3em;
+    box-shadow: 0em 0em 1em 0.6em black;
+    position: relative;
+    background-color: rebeccapurple;
+    width: 110em;
+    border-bottom-right-radius: 20em;
+    border-top-right-radius: 20em;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navPara{
+    margin: 0 2em;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navPara:hover{
+    text-shadow: 0.01em 0.01em 1em rgb(58, 58, 58);
+}
+
+.MobNav{
+    display: none;
+}
+.MobNav2{
+    display: none;
+}
+
+@media (max-width:376px) {
+    .navPara{
+        display: none;
+    }
+    .MobNav{
+        display: flex;
+        margin-right: 4em;
+        position: absolute;
+    }
+    .MobNav2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.707);
+        top:25em;
+        width: 100%;
+        right: 0%;
+        height: 20vh;
+        z-index: 1;
+    }
+    .MobnavPara{
+        color: aliceblue;
+        margin: 1em 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,60 @@
+.card{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10em;
+    border: 1em solid black;
+}
+
+.Type{
+    font-size: 2rem;
+   margin: 1em 0;
+}
+.Type span{
+    font-size: 2rem;
+    color: crimson;
+}
+.heading{
+    margin-bottom: 2%;
+}
+.card img{
+    border-radius: 10em;
+    margin-bottom: 2%;
+}
+.para{
+    text-align: center;
+    width: 60%;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.card button{
+    font-size: 2rem;
+    padding: 0.2em 1em;
+    margin-bottom: 2%;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 10em;
+    cursor: pointer;
+}
+
+@media (max-width:595px) {
+    .card img{
+        width: 70%;
+        height: auto;
+    }
+}
+@media (max-width:376px) {
+    .card button{
+        font-size: 1.5rem;
+    }
+}

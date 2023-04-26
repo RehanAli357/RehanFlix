@@ -1,0 +1,53 @@
+.card{
+    width: 140em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(222, 239, 254);
+    border: 0.2em solid black;
+    margin: 2em 5em;
+    border-radius: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.Image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Image img{
+    width: 100%;
+    height: auto;
+}
+
+.heading{
+    margin-top:5%;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.content{
+    width: 100%;
+    margin-top: 10em;
+    margin-bottom: 30em;
+    margin-left: 3%;
+}
+
+
+
+@media (max-width:426px) {
+    .card{
+        width: 100em;
+    }   
+}
+
+@media (max-width:321px) {
+    .card{
+        width: 90em;
+    }
+}
